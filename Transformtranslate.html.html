@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button{
+			font-size: 24px;
+			color: tomato;
+			border-radius: 48px;
+			border: 2px solid tomato;
+			background:transparent;
+			padding: 12px 25px;
+			width: 200px;
+			height: 62px;
+			transition: .1s;
+		}
+		button:hover{
+			color: #fff;
+		}
+		button::before{
+			content: "";
+			width: 200px;
+			height: 62px;
+			background: lightblue;
+			border-radius: 48px;
+			position: absolute;
+			z-index: -1;
+			transform: translate(-50px, -12px);
+			transition: all .5s linear;
+		}
+		button:hover::before{
+			background: blue;
+			transform: translate(-32px, -17px);
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<button>K.N.S-Coder</button>
+	</center>
+</body>
+</html>
