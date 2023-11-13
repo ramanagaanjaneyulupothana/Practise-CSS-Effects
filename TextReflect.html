@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Reflect</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: white;
+        }
+        .reflected{
+            display: inline-block;
+            width: max-content;
+            padding: 0 10px;
+        }
+        .reflected >*{
+            font-size: 10em;
+            font-weight: 700;
+            color: green;
+        }
+        .reflected >:last-child{
+            transform: rotateX(180deg) translateY(72px);
+            mask-image: linear-gradient(transparent 50%, green 90%);
+            -webkit-mask-image: linear-gradient(transparent 35%, green 90%);
+            opacity: 0.72;
+        }
+    </style>
+</head>
+<body>
+    <div class="reflected">
+        <div>RAMA and K.N.S</div>
+        <div>RAMA and K.N.S</div>
+    </div>
+</body>
+</html>
